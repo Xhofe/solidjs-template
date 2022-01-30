@@ -36,7 +36,6 @@ const Theme: Component = () => {
                   tabindex="0"
                   data-set-theme={item.theme}
                   data-act-class="active"
-                  class="active"
                 >
                   {item.text}
                 </a>
