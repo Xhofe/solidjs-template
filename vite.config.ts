@@ -1,6 +1,7 @@
 import path from "path";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
+import Unocss from "unocss/vite";
 
 export default defineConfig({
   resolve: {
@@ -8,7 +9,7 @@ export default defineConfig({
       "~": path.resolve(__dirname, "src"),
     },
   },
-  plugins: [solidPlugin()],
+  plugins: [solidPlugin(), Unocss()],
   build: {
     target: "esnext",
     polyfillDynamicImport: false,
